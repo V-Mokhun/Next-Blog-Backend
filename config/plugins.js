@@ -13,4 +13,21 @@ module.exports = ({ env }) => ({
       },
     },
   },
+  email: {
+    config: {
+      provider: "sendmail",
+      settings: {
+        defaultFrom: "mohunmax1408@gmail.com",
+        defaultReplyTo: "mohunmax1408@gmail.com",
+        testAddress: "spam54q@gmail.com",
+      },
+    },
+  },
+  "users-permissions": {
+    config: {
+      jwt: {
+        expiresIn: "15m",
+      },
+    },
+  },
 });
